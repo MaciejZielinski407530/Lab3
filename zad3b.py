@@ -18,7 +18,7 @@ def fib2(n):
     return fib2(n - 1) + fib2(n - 2)
 
 
-time_1 = timeit.timeit(lambda: fib(30), number=1)
+time_1 = timeit.timeit(lambda: fib (30), number=1)
 print("Czas dla funkcji rekurencyjnej:", time_1, "sekundy")
 
 time_2 = timeit.timeit(lambda: fib2(30), number=1)

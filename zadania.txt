@@ -11,5 +11,6 @@ f.	używając matplotlib narysuj w jednym oknie (subplots) histogram limitu kred
 3.	Dekoratory
 a.	wzbogać klasę Tree o dekorator @property do odczytywania najmniejszej wartości w całym drzewie
 b.	Zaimplementuj funkcję do obliczania kolejnych elementów ciągu Fibonacciego w sposób rekurencyjny, zmierz jej czas działania używając biblioteki timeit, następnie użyj dekoratora @lru_cache, i zmierz czas ponownie
-c.	napisz własny dekorator który zapisze na dysku wynik działania funkcji i przy kolejnym użyciu wczyta go z dysku zamiast obliczać ponownie (mogą to być obliczenia na tabeli z poprzedniego zadania)
+c.	napisz własny dekorator który zapisze na dysku wynik działania funkcji i przy kolejnym użyciu wczyta go z dysku zamiast obliczać ponownie
+(mogą to być obliczenia na tabeli z poprzedniego zadania)
 d.	* dodaj argument dekoratora decydujący o formacie zapisu (pickle, csv, excel, …)
