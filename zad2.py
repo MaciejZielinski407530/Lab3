@@ -1,9 +1,14 @@
+from datasets import load_dataset
 import pandas as pd
 import matplotlib.pyplot as plt
 
 
-url = "https://huggingface.co/datasets/imodels/credit-card/raw/main/train.csv"
-dane = pd.read_csv(url)
+#url = "https://huggingface.co/datasets/imodels/credit-card/raw/main/train.csv"
+#dane = pd.read_csv(url)
+
+dataset = load_dataset("imodels/credit-card")
+dane = pd.DataFrame(dataset['train'])
+
 
 dane = dane.drop_duplicates()  # Usuwanie duplikatów
 dane.to_csv("dane_train.csv")

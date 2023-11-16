@@ -1,4 +1,4 @@
-import pickle
+from datasets import load_dataset
 import os
 import pandas as pd
 import time
@@ -28,8 +28,8 @@ def save_result_to_disk(func):
 
 @save_result_to_disk
 def print_10_oldest_column(a, file_type):
-    url = "https://huggingface.co/datasets/imodels/credit-card/raw/main/train.csv"
-    dane = pd.read_csv(url)
+    dataset = load_dataset("imodels/credit-card")
+    dane = pd.DataFrame(dataset['train'])
     oldest_10 = dane.sort_values(by='age', ascending=False).head(10)
     return oldest_10.loc[:, [a]]
 
