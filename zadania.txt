@@ -14,3 +14,4 @@ b.	Zaimplementuj funkcję do obliczania kolejnych elementów ciągu Fibonacciego
 c.	napisz własny dekorator który zapisze na dysku wynik działania funkcji i przy kolejnym użyciu wczyta go z dysku zamiast obliczać ponownie
 (mogą to być obliczenia na tabeli z poprzedniego zadania)
 d.	* dodaj argument dekoratora decydujący o formacie zapisu (pickle, csv, excel, …)
+zobacz
